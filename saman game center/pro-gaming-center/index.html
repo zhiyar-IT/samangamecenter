@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pro Gaming Center</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <i class='bx bx-joystick'></i> Pro Gaming Center
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#tvs" class="active">TVs</a></li>
+        <li><a href="#games">Games</a></li>
+        <li><a href="#payment">Payment</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Pro Gaming Center</h1>
+      <p>Your ultimate destination for gaming with 12 TVs!</p>
+      <a href="#payment"><button class="hero-btn">Start Playing</button></a>
+    </div>
+  </section>
+
+  <section class="section" id="tvs">
+    <div class="section-title">Our 12 TV Gaming Systems</div>
+    <div class="tvs-grid">
+      <!-- TV Cards will be dynamically generated here -->
+    </div>
+  </section>
+
+  <section class="section" id="games">
+    <div class="section-title">Available Games</div>
+    <div class="games-list">
+      <div class="game-chip">FIFA 2020-2025</div>
+      <div class="game-chip">PES 2020-2025</div>
+      <div class="game-chip">Call of Duty: Warzone</div>
+      <div class="game-chip">Call of Duty: Cold War</div>
+    </div>
+  </section>
+
+  <section class="payment-section" id="payment">
+    <h2>Game & Snack Payment System</h2>
+    <form class="payment-form" id="payForm" autocomplete="off">
+      <label for="tvNum">Choose TV Number</label>
+      <select id="tvNum" required>
+        <option value="">Select TV</option>
+        <option value="1">TV 1</option>
+        <option value="2">TV 2</option>
+        <option value="3">TV 3</option>
+        <option value="4">TV 4</option>
+        <option value="5">TV 5</option>
+        <option value="6">TV 6</option>
+        <option value="7">TV 7</option>
+        <option value="8">TV 8</option>
+        <option value="9">TV 9</option>
+        <option value="10">TV 10</option>
+        <option value="11">TV 11</option>
+        <option value="12">TV 12</option>
+      </select>
+      <label for="game">Choose Game</label>
+      <select id="game" required>
+        <option value="">Select Game</option>
+        <option value="FIFA">FIFA 2020-2025</option>
+        <option value="PES">PES 2020-2025</option>
+        <option value="Warzone">Call of Duty: Warzone</option>
+        <option value="Cold War">Call of Duty: Cold War</option>
+      </select>
+      <label for="minutes">Minutes (FIFA/PES: 5-25 min)</label>
+      <input type="number" id="minutes" min="5" max="25" step="1" value="8" required>
+      <button type="submit">Calculate & Pay</button>
+    </form>
+    <div class="payment-summary" id="paymentSummary" style="display:none;"></div>
+  </section>
+
+  <footer>
+    <div>
+      &copy; 2025 Pro Gaming Center. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
